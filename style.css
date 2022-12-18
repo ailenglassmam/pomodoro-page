@@ -1,0 +1,266 @@
+/* tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* colores */
+:root {
+    --background-body: #310394;
+    --background-body2: #1a024e;
+    --background-pomodoro-timer: #8552F2;
+    --background-input: #31039458;
+    --font-color1: #F2CB05;
+    --font-color2: #ffff;
+    --font-color3: #310394;
+    --title2: #F250A9;
+    --button-add-inactive1: #F250A9;
+    --button-add-inactive2: #F2CB05;
+    --button-add-inactive3: #D955D0;
+    --button-start-inactive: #F28705;
+    --button-hover: #ffff;
+    --placeholder-color: rgba(255, 255, 255, 0.589);
+}
+
+/* configuración general */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--background-body);
+}
+
+#header-intro {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5rem;
+    background-image: url(./img/waves.svg);
+    background-size:100% 50%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    color: var(--title2);
+    margin: 10rem 0 2rem;
+    font-size: 6rem;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.20);
+}
+
+h3 {
+    color: var(--font-color2);
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2rem;
+    width: 70vw;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 5rem 0;
+}
+
+#app {
+    width: 500px;
+    height: fit-content;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: var(--background-pomodoro-timer);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+#time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-body);
+    border-radius: 1rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+    box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 0.25);
+}
+
+#value {
+    color: var(--font-color2);
+    font-size: 6rem;
+    font-family: 'Fredoka One', cursive;
+    padding: 1rem 0;
+}
+
+#taskName {
+    color: var(--font-color2);
+    font-size: 2rem;
+    padding: 0 0 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.tasks-container {
+    height: fit-content;
+    margin: 2rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#itTask {
+    height: 2.5rem;
+    background-color: var(--background-input);
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    color: #310394;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: var(--placeholder-color);
+}
+
+#btn-add {
+    width:fit-content;
+    align-self: flex-end;
+    height: 2.5rem;
+    background-color: var(--button-add-inactive3);
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    color: var(--font-color2);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+#btn-add:hover {
+    background-color: var(--button-hover);
+    color: var(--font-color3);
+    cursor: pointer;
+}
+
+.task {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.title {
+    color: var(--font-color2);
+    font-size: 1.5rem;
+    padding: 0 0 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.completed {
+    color: var(--font-color1);
+    font-size: 1rem;
+    padding: 0 0 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 1rem;
+    align-self: flex-end;
+}
+
+.btn-start {
+    align-self: flex-end;
+    height: 2.5rem;
+    background-color: var(--button-add-inactive2);
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    color: var(--font-color3);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-start:hover {
+    background-color: var(--button-hover);
+    color: var(--font-color3);
+    cursor: pointer;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+}
+
+.attribution {
+    color: var(--font-color2);
+    text-align: center; 
+}
+.attribution a { 
+    color:var(--font-color1);
+    text-decoration: none; 
+}
+
+/* celulares */
+
+@media (max-width: 599px) {
+    body {
+        width: auto;
+    }
+    
+    #header-intro {
+        width: auto;
+        padding: 0 1.5rem;
+        background-size:100% 30%;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    #content {
+        margin: 8rem 0;
+    }
+    
+    #app {
+        width: 270px;
+        padding: 1rem;
+    }
+    
+    #value {
+        font-size: 4rem;
+    }
+    
+    #taskName {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 1rem;
+    }
+    
+    .tasks-container {
+        margin: 0;
+    }
+    
+    footer {
+        width: auto;
+        height: 25vh;
+        padding: 0 2rem;
+        font-size: 20px;
+    }
+}

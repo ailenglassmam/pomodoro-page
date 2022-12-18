@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon.png">
+    <!-- my css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header id="header-intro">
+        <h1>Pomodoro Timer</h1>
+        <h3>Este método de gestión del tiempo utiliza un temporizador para dividir el trabajo en intervalos de 25 minutos de duración, separados por descansos de 5 minutos.</h3>
+    </header>
+    <main id="content">
+        <div id="app">
+        <div id="time">
+            <div id="value"></div>
+            <div id="taskName"></div>
+        </div>
+
+        <div class="tasks-container">
+            <div class="form">
+                <form action="" id="form">
+                    <input type="text" id="itTask" placeholder="Tarea a realizar">
+                    <input type="submit" value="Agregar Tarea" id="btn-add">
+                </form>
+            </div>
+            <div id="tasks"></div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="attribution">
+            Challenge coded & designed by <a href="https://www.linkedin.com/in/ailenglassmam/" target="_blank">Ailén Glassmam</a>.
+        </div>
+    </footer>
+    <!-- my js -->
+    <script src="./index.js"></script>
+</body>
+</html>
+
+<!-- 
+    value: contador
+    taskName: nombre de la tarea a realizar 
+-->
