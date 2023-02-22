@@ -9,6 +9,12 @@ Este método de gestión del tiempo utiliza un temporizador para dividir el trab
 - Comenzar a comprender la dinámica del manejo de eventos, funciones, métodos, etc.
 - Puesta en práctica de los conocimientos en JS tanto desde el lado de la programación como el manejo del DOM.
 
+## Capturas de pantalla
+
+![10](https://user-images.githubusercontent.com/110137453/220750355-790d83f3-c56a-4c6d-be2c-4d87dbdd7e94.jpg)
+![9](https://user-images.githubusercontent.com/110137453/220750365-2c3d6c64-4149-47d7-abbb-19f930a94b19.jpg)
+
+
 ### Ejecución del ejercicio
 
 El ejercicio fue realizado siguiendo los pasos de "Vida MRR - Programacion web" en su video "10 PROYECTOS COMPLETOS EN JAVASCRIPT".
@@ -22,8 +28,6 @@ Se le agregó dos transiciones de color (background) en dos oportunidades distin
 - HTML
 - CSS
 - JS
-
-
 
 ## Fonts
 
